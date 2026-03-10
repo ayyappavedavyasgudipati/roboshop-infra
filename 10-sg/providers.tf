@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "roboshop-project-dev-env"
-    key            = "sg/roboshop.tfstate"
+    key            = "/roboshop/securityGroup.tfstate"
     region         = "us-east-1"
     encrypt        = true
   }

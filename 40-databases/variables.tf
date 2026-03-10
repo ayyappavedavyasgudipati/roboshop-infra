@@ -14,7 +14,7 @@ variable "ec2_tags" {
     type = map(string)
 
     default = {
-        Terraform = "true"
+        
     }
 }
 
@@ -26,4 +26,12 @@ variable "project" {
 variable "environment" {
     type = string
     default = "dev"
+}
+
+variable "vol_tags" {
+    type = map(string)
+
+    default = {
+        
+    }
 }
