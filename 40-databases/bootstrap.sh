@@ -2,7 +2,7 @@
 
 component=$1
 
-dnf install ansible -y
+sudo dnf install ansible -y
 cd /home/ec2-user
 git clone https://github.com/ayyappavedavyasgudipati/ansible-roboshop-tf.git
 
