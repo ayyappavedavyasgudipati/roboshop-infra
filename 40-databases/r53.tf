@@ -3,7 +3,7 @@ resource "aws_route53_record" "mongodb" {
   name    = var.domain_name
   type    = "A"
   ttl     = 1
-  records = aws_instance.mongodb.private_ip
+  records = [aws_instance.mongodb.private_ip]
 }
 
 resource "aws_route53_record" "redis" {
@@ -11,7 +11,7 @@ resource "aws_route53_record" "redis" {
   name    = var.domain_name
   type    = "A"
   ttl     = 1
-  records = aws_instance.redis.private_ip
+  records = [aws_instance.redis.private_ip]
 }
 
 resource "aws_route53_record" "rabbitmq" {
@@ -19,5 +19,5 @@ resource "aws_route53_record" "rabbitmq" {
   name    = var.domain_name
   type    = "A"
   ttl     = 1
-  records = aws_instance.rabbitmq.private_ip
+  records = [aws_instance.rabbitmq.private_ip]
 }
