@@ -35,3 +35,11 @@ variable "vol_tags" {
         
     }
 }
+
+variable "domain_name" {
+    default= "opswithvyas.online"
+}
+
+variable "zone_id" {
+    default = "Z10201011EZM611L941TT"
+}
