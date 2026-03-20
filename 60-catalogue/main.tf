@@ -160,7 +160,7 @@ resource "aws_autoscaling_policy" "catalogue" {
 
 
 resource "aws_lb_listener_rule" "catalogue" {
-  listener_arn = local.backende_alb_listner_arn
+  listener_arn = local.backend_alb_listner_arn
   priority     = 10
 
   action {
