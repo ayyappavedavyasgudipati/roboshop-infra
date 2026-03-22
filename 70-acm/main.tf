@@ -5,7 +5,7 @@ resource "aws_acm_certificate" "roboshop" {
   tags = merge(
     var.ec2_tags,
     {
-      Name = "${var.project}-${var.environment}-${varr.domain_name}"
+      Name = "${var.project}-${var.environment}-${var.domain_name}"
     }
   )
 
