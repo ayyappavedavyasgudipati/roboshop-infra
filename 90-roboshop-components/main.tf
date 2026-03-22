@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 resource "aws_instance" "main" {
   ami           = var.ec2.ami
   instance_type = "t3.micro"
@@ -207,11 +206,4 @@ resource "terraform_data" "main_delete" {
   provisioner "local-exec" {
     command = "aws ec2 terminate-instances --instance-ids ${aws_instance.main.id} "
   }
-=======
-module "component" {
-    for_each = var.components
-    source = "git::https://github.com/daws-88s/terraform-roboshop-component.git?ref=main"
-    component = each.key
-    rule_priority = each.value.rule_priority
->>>>>>> 87eb121 (first commit)
 }
