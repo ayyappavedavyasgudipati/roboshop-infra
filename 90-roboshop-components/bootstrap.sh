@@ -5,7 +5,7 @@ component=$1
 dnf install ansible -y
 
 cd /home/ec2-user
-git clone https://github.com/daws-88s/ansible-roboshop-roles-tf.git
+git clone https://github.com/ayyappavedavyasgudipati/ansible-roboshop-tf.git
 
 cd ansible-roboshop-roles-tf
 git pull
